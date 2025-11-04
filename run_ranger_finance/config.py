@@ -1,0 +1,35 @@
+import os
+from utils.run_config import ROOT_DIR
+
+
+DELAY_BETWEEN_SWAPS = 10, 30
+SLEEP_BETWEEN_WALLETS = 10, 30
+
+
+TOKENS_FOR_SWAP = {
+    "SOL": "So11111111111111111111111111111111111111112",
+    "USDC": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "USDT": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+    "TRUMP": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN"
+}
+
+FULL_RANDOM_SWAPS = True
+SWAP_FROM = "SOL"
+SWAP_USE_METHOD = "percentage" # "amount" / "percentage"
+SWAP_AMOUNT = 0.003, 0.004
+SWAP_PERCENTAGE = 20, 30
+BACK_SWAP_DEVIATION = 5 # %
+SWAP_ALL_TO_SOL_AFTER_WORK = True
+SWAP_TIMES = 3, 5
+MAX_SWAP_VOLUME = 150, 155
+
+
+SIMULTANEOUS_TASKS = 1
+HIDEN_RUN = False
+
+
+#Do not change!
+DEFAULT_PASSWORD = 'CHANGE_tH1s_PASSWORD!'
+BASE_EXTENSION_PATH = os.path.join(ROOT_DIR, 'run_ranger_finance', 'data')
+EXTENSION_PHANTOM_WALLET = BASE_EXTENSION_PATH + '/phantom_wallet_extension/bfnaelmomeimhlpmgjnjophhpkkoljpa/25.37.0_0'
+EXTENSIONS_PATH = [EXTENSION_PHANTOM_WALLET]

@@ -1,0 +1,1 @@
+from .models import RangerFinanceBaseModel as base_project_model
